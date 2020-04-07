@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#51B1FF</color>
+    <color name="colorPrimaryDark">#1295FF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ltGray">#797979</color>
+    <color name="background">#FFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="backgroundMaisEscuro">#1295FF</color>
+    <color name="BtnCadastra">#fc3a99</color>
+    <color name="BtnLoga">#666666</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
 </resources>

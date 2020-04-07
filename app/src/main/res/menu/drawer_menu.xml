@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        tools:ignore="ExtraText">
+        <item
+            android:id="@+id/Menu_Perfil"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Perfil" />
+
+        <item
+            android:id="@+id/Menu_Cadastrar"
+            android:icon="@drawable/pen_color_black_24dp"
+            android:title="Escrever" />
+
+        <item
+            android:id="@+id/Menu_Ler"
+            android:icon="@drawable/ic_ler_black_24dp"
+            android:title="Ler" />
+
+
+        <item
+            android:id="@+id/menu_Sair"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Sair"/>
+
+
+    </group>
+
+</menu>

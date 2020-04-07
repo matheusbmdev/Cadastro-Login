@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "615147437499",
+    "firebase_url": "https://estudotcc-f44e7.firebaseio.com",
+    "project_id": "estudotcc-f44e7",
+    "storage_bucket": "estudotcc-f44e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615147437499:android:7574cfe3aef6463143189e",
+        "android_client_info": {
+          "package_name": "com.example.estudo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "615147437499-itaddrfk7c900phn2f8rnr559co1tl1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.estudo",
+            "certificate_hash": "d2fc7b1f0aff3d6e19f20c71eda09b7fd777b9e9"
+          }
+        },
+        {
+          "client_id": "615147437499-gukcqlh5kgqqlvbv0r5ivs3vptt6lcg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJlWGKfm7dwb4ezRUXdcOWwgnyxJ9Pqbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "615147437499-gukcqlh5kgqqlvbv0r5ivs3vptt6lcg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

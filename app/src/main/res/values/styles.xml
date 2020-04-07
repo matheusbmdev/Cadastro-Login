@@ -2,10 +2,83 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="actionBarTheme">@style/MyApp.ActionBarTheme</item>
+        <item name="actionBarStyle">@style/MyApp.ActionBarStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyApp.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- THIS is where you can color the arrow! -->
+        <item name="colorControlNormal">@color/ltGray</item>
+    </style>
+
+    <style name="MyApp.ActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <!-- style for actionBar title -->
+        <item name="titleTextStyle">@style/MyApp.ActionBarTitleColor</item>
+        <item name="colorControlNormal">@color/ltGray</item>
+        <item name="background">@color/background</item>
+
+    </style>
+
+    <style name="MyApp.ActionBarTitleColor" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/ltGray</item>
+        <item name="colorControlNormal">@color/ltGray</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="menuDrawer" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/background</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text" parent="Theme.AppCompat.Light.NoActionBar">
+     <!--   <item name="itemTextColor">@color/white</item> -->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="formularioInput" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="btnCadastra" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorHint">@color/white</item>
+      <!--  <item name="android:width">@dimen/loginDimAll</item> -->
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">20sp</item>
+     <!--   <item name="android:background">@drawable/btn_cadastra_rounded_corner</item> -->
+    </style>
+
+    <style name="btnLoga" parent="Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/white</item>
+     <!--   <item name="android:width">@dimen/loginDimAll</item> -->
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">20sp</item>
+     <!--   <item name="android:background">@drawable/btn_login_rounded_corner</item> -->
+    </style>
+
+    <style name="btnAntProx" parent="Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/white</item>
+       <!--- <item name="android:width">@dimen/loginDimAll</item> -->
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">20sp</item>
+       <!-- <item name="android:background">@drawable/btn_ant_prox_rounded_corner</item> -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>
