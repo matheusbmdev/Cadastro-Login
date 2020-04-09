@@ -10,15 +10,23 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.example.estudo.Modelo.Pessoa;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.UUID;
 
 public class cadastro extends MainActivity {
 
     private EditText cadSenha;
     private EditText cadEmail;
+    private EditText nome;
     private Button btnCadastro;
     private Button btnVoltar;
     private FirebaseAuth auth;
@@ -55,8 +63,10 @@ public class cadastro extends MainActivity {
     private void inicializaComponentes() {
         cadSenha = (EditText) findViewById(R.id.cadSenha);
         cadEmail = (EditText) findViewById(R.id.cadEmail);
+        nome = findViewById(R.id.cadNome);
         btnCadastro = (Button) findViewById(R.id.btncadCadastro);
         btnVoltar = (Button) findViewById(R.id.btncadVoltar);
+
     }
 
     private void criarUser(String email, String senha) {
@@ -64,6 +74,24 @@ public class cadastro extends MainActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    FirebaseUser usu = FirebaseAuth.getInstance().getCurrentUser();
+                    UserProfileChangeRequest.Builder profileUpdate = new UserProfileChangeRequest.Builder()
+                            .setDisplayName(nome.getText().toString().trim());
+
+                    assert usu != null;
+                    usu.updateProfile(profileUpdate.build());
+
+                    Pessoa p = new Pessoa();
+                    p.setNome(nome.getText().toString().trim());
+                    p.setEmail(cadEmail.getText().toString().trim());
+                    p.setId(UUID.randomUUID().toString());
+
+
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myref =database.getReference("Perfil");
+                    myref.child(p.getId()).setValue(p);
+
+
                     alert("Cadastrado com sucesso!");
                     Intent i = new Intent(cadastro.this, MainActivity.class);
                     startActivity(i);

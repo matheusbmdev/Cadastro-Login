@@ -5,6 +5,7 @@ public class Pessoa {
     private String nome;
     private String sobrenome;
     private String email;
+    private String id;
 
 
 
@@ -12,7 +13,7 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String nome, String sobrenome, String email) {
+    public Pessoa(String nome, String sobrenome, String email, String id) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
@@ -40,6 +41,14 @@ public class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

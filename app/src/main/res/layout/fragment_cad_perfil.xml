@@ -16,7 +16,7 @@
         android:layout_marginEnd="156dp"
         android:layout_marginRight="156dp"
         android:layout_marginBottom="135dp"
-        android:text="Cadastrar" />
+        android:text="Atualizar" />
 
     <EditText
         android:id="@+id/nome_cad_perfil"
@@ -29,7 +29,7 @@
         android:inputType="text"
         />
 
-    <EditText
+  <!--  <EditText
         android:id="@+id/sobrenome_cad_perfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_marginTop="267dp"
         android:ems="10"
         android:inputType="text"
-        />
+        /> -->
 
     <TextView
         android:id="@+id/textView2"
@@ -51,6 +51,7 @@
         android:text="Nome"
         android:textSize="20dp" />
 
+    <!--
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -61,7 +62,7 @@
         android:layout_marginTop="231dp"
         android:text="Sobrenome"
         android:textSize="20dp" />
-
+            -->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -71,5 +72,7 @@
         android:layout_marginTop="25dp"
         android:text="Informações Pessoais"
         android:textSize="25sp" />
+
+
 
 </RelativeLayout>
