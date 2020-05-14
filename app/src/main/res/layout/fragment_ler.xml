@@ -21,15 +21,55 @@
     <ListView
         android:id="@+id/list_Ler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="476dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="3dp"/>
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/frag_ler_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Escreva sua mensagem"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/frag_excluir_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="Excluir" />
+
+    <Button
+        android:id="@+id/frag_ler_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="125dp"
+        android:text="Enviar" />
 
 </RelativeLayout>

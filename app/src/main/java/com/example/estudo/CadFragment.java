@@ -95,7 +95,7 @@ public class CadFragment extends Fragment {
                         for(DataSnapshot objSnapshot: dataSnapshot.getChildren()){
                             Pessoa p = objSnapshot.getValue(Pessoa.class);
                             if(p.getEmail().equals(email)){
-                               EnviarMensagem enviarMensagem = new EnviarMensagem(email, com.getText().toString().trim(),hr, p.getNome(), p.getId());
+                               EnviarMensagem enviarMensagem = new EnviarMensagem(email, com.getText().toString().trim(),hr, p.getNome(), p.getId(), String.valueOf(new Date().getTime()));
                                 databaseReference.child("Chat").child(String.valueOf(new Date().getTime())).setValue(enviarMensagem);
                                 Toast.makeText(getContext(), "Mensagem enviada com sucesso!",
                                         Toast.LENGTH_SHORT).show();

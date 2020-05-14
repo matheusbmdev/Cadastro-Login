@@ -85,6 +85,7 @@ public class cadastro extends MainActivity {
                     p.setNome(nome.getText().toString().trim());
                     p.setEmail(cadEmail.getText().toString().trim());
                     p.setId(UUID.randomUUID().toString());
+                    p.setAdm(false);
 
 
                     FirebaseDatabase database = FirebaseDatabase.getInstance();

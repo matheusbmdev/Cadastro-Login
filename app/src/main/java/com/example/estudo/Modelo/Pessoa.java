@@ -6,6 +6,7 @@ public class Pessoa {
     private String sobrenome;
     private String email;
     private String id;
+    private boolean adm;
 
 
 
@@ -13,10 +14,11 @@ public class Pessoa {
 
     }
 
-    public Pessoa(String nome, String sobrenome, String email, String id) {
+    public Pessoa(String nome, String sobrenome, String email, String id, boolean adm) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
+        this.adm = adm;
     }
 
     public String getNome() {
@@ -45,6 +47,14 @@ public class Pessoa {
 
     public String getId() {
         return id;
+    }
+
+    public boolean isAdm() {
+        return adm;
+    }
+
+    public void setAdm(boolean adm) {
+        this.adm = adm;
     }
 
     public void setId(String id) {

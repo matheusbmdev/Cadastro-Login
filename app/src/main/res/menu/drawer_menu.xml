@@ -20,6 +20,11 @@
             android:icon="@drawable/ic_ler_black_24dp"
             android:title="Ler" />
 
+        <item
+            android:id="@+id/Menu_Pessoas"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Pessoas Cadastradas" />
+
 
         <item
             android:id="@+id/menu_Sair"

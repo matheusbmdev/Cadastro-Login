@@ -8,16 +8,18 @@ public class EnviarMensagem {
      private String cad_hora_formatada;
      private String cad_nome;
      private String cad_id;
+     private String cad_id_msg;
 
     public EnviarMensagem() {
     }
 
-    public EnviarMensagem(String cad_email, String cad_Mensagem, String cad_hora_formatada, String cad_nome, String cad_id) {
+    public EnviarMensagem(String cad_email, String cad_Mensagem, String cad_hora_formatada, String cad_nome, String cad_id, String cad_id_msg) {
         this.cad_email = cad_email;
         this.cad_Mensagem = cad_Mensagem;
         this.cad_hora_formatada = cad_hora_formatada;
         this.cad_nome = cad_nome;
         this.cad_id = cad_id;
+        this.cad_id_msg = cad_id_msg;
     }
 
     public String getEmail() {
@@ -58,6 +60,14 @@ public class EnviarMensagem {
 
     public void setCad_id(String cad_id) {
         this.cad_id = cad_id;
+    }
+
+    public String getCad_id_msg() {
+        return cad_id_msg;
+    }
+
+    public void setCad_id_msg(String cad_id_msg) {
+        this.cad_id_msg = cad_id_msg;
     }
 
     @Override
